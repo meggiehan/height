@@ -8,18 +8,54 @@
 
 .page-aquatic-class{
   .page-content{
+    background-color: #fff;
+    font-family:"PingFangSC-Regular";
     .aquatic-list{
-        height: 10.8rem;
-        color: black;
         width: 100%;
-        border: 1px solid green;
         a{
-          color: black;
+          display: inline-block;
+          width: 100%;
+          .list-more{
+            border-bottom: 1px solid #ccc;
+            margin: 0rem 1.6rem;
+            color: black;
+            display: inline-block;
+            .aquatic-img{
+              img{
+                width: 26%;
+                margin: 1.4rem 1rem 1.4rem 0rem;
+                float: left;
+              }
+            }
+            .aquatic-info{
+              width: 63%;
+              float: left;
+              margin-top: 1.6rem;
+              .class-title{
+                display: -webkit-box;
+                // width: 62%;
+                // height: 4.5rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-break: break-all;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                p{
+                  font-size: 1.5rem;
+                  display: inline;
+                }
+              }
+              .class-technology{
+                margin-top: .5rem;
+                p{
+                  font-size: 1.3rem;
+                  color: #747474 ;
+                  display: inline;
+                }
+              }
+            }
+          }
         }
     }
   }
-}
-
-body{
-  border-color: #fff;
 }
