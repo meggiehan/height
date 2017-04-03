@@ -53,6 +53,7 @@ import RefreshOldTokenModel from './js/model/RefreshOldTokenModel';
 import store from './utils/localStorage';
 import {shareMyTripInit} from './js/shareMyTrip';
 
+import {aquaticClassInit} from './js/aquaticClass';
 
 const deviceF7 = new Framework7();
 const {device} = deviceF7;
@@ -283,6 +284,11 @@ const initApp = f7.onPageInit("*", (page) => {
     page.name === 'postDriverAuth' && postDriverAuthInit(f7, mainView, page);
     page.name === 'postDriverInfo' && postDriverInfoInit(f7, mainView, page);
     page.name === 'recruitDriverSuccess' && f7.hideIndicator();
+
+    /**
+     * 水产课堂相关页面
+     * */
+     page.name === 'aquaticClass' && aquaticClassInit(f7, mainView, page);
 });
 
 /**

@@ -20,6 +20,10 @@ gulp.task('watch', function() {
         'src/less/views/*.less'], ['less']); //当所有less文件发生改变时，调用testLess任务
 });
 
+// gulp.task('watch', function () {
+//     gulp.watch("src/less/views/aquaticClass.less", ['less']);
+// });
+
 gulp.task('zip', () => {
     return gulp.src('src/build/**')
         .pipe(zip('webapp.zip'))
