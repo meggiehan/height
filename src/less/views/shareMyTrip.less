@@ -3,17 +3,20 @@
         background: @bg-fff;
         padding: 7rem 3rem 2rem;
         .share-trip-user{
-            padding-bottom: 6rem;
+            // padding-bottom: 6rem;
+            height: 74%;
         }
         .share-trip-user-header{
+            height: 64%;
             .text-hidden;
             .text-center;
-            padding: 2.5rem 0 1.5rem;
+            // padding: 2.5rem 0 1.5rem;
             background-image: linear-gradient(0deg, @bg-share-trip-start 0%, @bg-share-trip-end 100%);
             box-shadow: 0px 0px 10px 0px @bg-black-4;
             color: @text-fff;
             .user-head-img{
                 width: 24%;
+                height: 35%;
                 .auto;
                 display: inline-block;
                 img{
@@ -23,6 +26,11 @@
                     border: 2px solid @bg-white-4;
                     .box-size();
                 }
+            }
+            .user-head-img::before{
+              content: '';
+              display: block;
+              height: 10%;
             }
             .user-level,.user-release-num{
                 width: 38%;
@@ -45,14 +53,21 @@
                 }
             }
             .share-trip-user-nickname{
-                padding: 1.2rem 0 1rem;
+              height: 13%;
+                // padding: 1.2rem 0 1rem;
                 font-size: 1.8rem;
                 .text-hidden;
                 width: 100%;
             }
+            .share-trip-user-nickname::before{
+              content: '';
+              display: block;
+              height: 4%;
+            }
             .share-trip-user-auth-state{
                 border-bottom:1px dashed @text-fff;
-                padding-bottom: 2rem;
+                // padding-bottom: 2rem;
+                height: 17%;
                 span{
                     display: inline-block;
                     padding: 0.5rem 1rem;
@@ -60,9 +75,15 @@
                     border-radius: 0.3rem;
                 }
             }
+            .share-trip-user-auth-state::before{
+              content: '';
+              display: block;
+              height: 2%;
+            }
             .share-trip-line{
+              height: 35%;
                 overflow: hidden;
-                padding-top: 2rem;
+                // padding-top: 2rem;
                 &>div{
                     width: 43%;
                     .title{
@@ -114,13 +135,19 @@
                     }
                 }
             }
+            .share-trip-line::before{
+              content: '';
+              display: block;
+              height: 7%;
+            }
         }
         .share-trip-user-code{
-            margin-top: 3rem;
+            // margin-top: 3rem;
             font-size: 1.4rem;
             color: @text-name;
             .text-center;
-            padding: 1rem 0;
+            // padding: 1rem 0;
+            height: 32%;
             p{
                 margin: 0;
                 line-height: 1.6;
@@ -135,14 +162,20 @@
                 overflow: hidden;
             }
         }
+        .share-trip-user-code::before{
+          content: '';
+          display: block;
+          height: 28%;
+        }
         .share-trip-share{
             .text-center;
             position: fixed;;
             bottom: 0;
             left: 0;
-            padding:1rem 3rem;
+            padding:0rem 3rem;
             width: 100%;
             .box-size();
+            height: 26%;
             &>p{
                 .ps-r;
                 span{
@@ -160,6 +193,38 @@
                     height: 0;
                     border-bottom:1px solid @text-a9;
                 }
+            }
+            .invite-share-tab{
+              min-height: 0rem;
+              height: 70%;
+              .weixin-friends img,
+              .weixin-friends-circle img {
+                  padding-top: 0;
+              }
+              .weixin-friends img,
+              .weixin-friends-circle img{
+                  width: 4rem;
+                  padding-bottom: 0rem;
+              }
+              .invite-share-items{
+                height: 85%;
+                .qq-friends .iconfont{
+                  vertical-align: top;
+                }
+                .qq-friends p{
+                  margin-top: .3rem;
+                }
+              }
+              .invite-share-items::before{
+                content: '';
+                display: block;
+                height: 8%;
+              }
+              .invite-share-items:nth-child(3)::before{
+                content: '';
+                display: block;
+                height: 0%;
+              }
             }
         }
         .bg-card-pic, canvas, .bg-card-level{
